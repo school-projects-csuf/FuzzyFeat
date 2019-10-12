@@ -1,0 +1,33 @@
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+}
+.display-4{
+  color: rgb(219, 161, 94);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 75px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
+  vertical-align: middle;
+}
+.navbar {
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+  /* This is just a place holder image */
+  background-image: url(../img/WelcomeImage.jpg);
+  background-size: cover;
+}
+
+.lead {
+  color: red;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
+
+#Enter-BTN {
+  color: red;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
