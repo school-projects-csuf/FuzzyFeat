@@ -5,42 +5,69 @@
   <meta charset="utf-8">
   <!-- css. -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/create.css">
   <title>Home</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Fuzzy Feet</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Quiz Hub
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="create.html">Create Quiz</a>
-            <a class="dropdown-item" href="myquizzes.html">My Quizzes</a>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Fuzzy Feat</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Quiz
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Take A Quiz</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="create.html">Create A Quiz</a>
           </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="signup.html">Sign up<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="login.html">Log in<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+        </div>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
   <!-- Begin body -->
+  <div class="create-quiz-container">
+    <!-- create quiz form -->
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Quiz Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Quiz bio</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select your Category</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Movies</option>
+          <option>Comic Books</option>
+          <option>TV</option>
+          <option>Cartoon</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-success create-btn">Next</button>
+    </form>
+  </div>
 
   <!-- js. -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
