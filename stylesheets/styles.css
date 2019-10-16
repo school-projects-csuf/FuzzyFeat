@@ -14,10 +14,15 @@
   margin-bottom: 50px;
 }
 
-.jumbotron {
+#welcomeJumbo {
   /* This is just a place holder image */
-  background-image: url(../img/WelcomeImage.jpg);
+  background-image: url(../img/splash2.jpg);
   background-size: cover;
+}
+
+#indexJumbo {
+  background-image: url(../img/splash.jpg);
+  background-size: 100% 100%;
 }
 
 .lead {
