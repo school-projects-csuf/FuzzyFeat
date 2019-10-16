@@ -6,6 +6,10 @@
   margin-bottom: 1rem;
 }
 
+.quiz-image {
+  background-image: url(../img/disney.jpg);
+}
+
 .user-info-container img {
   border-radius: 50%;
 }
