@@ -1,0 +1,20 @@
+.user-info-container {
+  text-align: left;
+  padding: 2em;
+  background-color: #ededed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.user-info-container img {
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+.quizzes-container {
+  margin: 1rem 5rem;
+}
