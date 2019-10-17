@@ -9,14 +9,34 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-<style>
-body {
-  background-image: url("img/backgroundIndex.jpg");
-  background-color: red;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+  <style>
+    body {
+      background-image: url("img/backgroundIndex.jpg");
+      background-color: red;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #dropdown {
+      height: 50px;
+      width: 110px;
+      font-size: 20pt;
+      justify-content: center;
+    }
+    .navbar-brand {
+      padding: 0 15px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 50pt;
+    }
+    .navbar-nav {
+      height: 50px;
+      justify-content: center;
+    }
+    .nextBTN {
+      height: 20px;
+    }
+
+  </style>
 
 </head>
 
@@ -30,25 +50,25 @@ body {
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <!-- Example single danger button -->
         <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" id="dropdown" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Quiz
           </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Take A Quiz</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="create.html">Create A Quiz</a>
+            <a class="dropdown-item" href="#">Create A Quiz</a>
           </div>
         </div>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:20pt;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size:20pt;">Search</button>
           </form>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Log In</a>
+            <a class="nav-link" href="login.html" style="font-size:20pt;">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="signup.html">Sign Up</a>
+            <a class="nav-link" href="signup.html" style="font-size:20pt;">Sign Up</a>
           </li>
         </ul>
       </div>
@@ -86,33 +106,34 @@ body {
       </div>
     </div>
 
+
+
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Bottom navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li class="nav-item dropup">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown10">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown10">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
   </div>
