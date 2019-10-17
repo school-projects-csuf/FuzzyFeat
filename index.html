@@ -8,14 +8,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
-<s>
-  .jumbotron{
-    sdfgsd
-  }
-</s>
+
+  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true"></audio>
+  <style>
+    body {
+      background-image: url("img/backgroundIndex.jpg");
+      background-color: red;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #dropdown {
+      height: 50px;
+      width: 110px;
+      font-size: 20pt;
+      justify-content: center;
+    }
+    .navbar-brand {
+      padding: 0 15px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 50pt;
+    }
+    .navbar-nav {
+      height: 50px;
+      justify-content: center;
+    }
+    .nextBTN {
+      height: 20px;
+    }
+
+  </style>
+
 </head>
 
 <body>
+
+
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +53,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <!-- Example single danger button -->
         <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" id="dropdown" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Quiz
           </button>
           <div class="dropdown-menu">
@@ -36,33 +64,29 @@
         </div>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:20pt;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size:20pt;">Search</button>
           </form>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Log In</a>
+            <a class="nav-link" href="login.html" style="font-size:20pt;">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="signup.html">Sign Up</a>
+            <a class="nav-link" href="signup.html" style="font-size:20pt;">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <img src="img/indexStamp.png" style="margin-left: 500px;margin-top: 150px;width:60%;height:60%;">
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <li><a href="welcomePage.html" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
+      </ul>
+    </nav>
   </header>
 
-  </div>
-  <div class="container">
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark" id="indexJumbo">
-      <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">WELCOME</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <a href="welcomePage.html" class="btn btn-warning btn-lg btn-block" id = "Enter-BTN" >ENTER NOW</a>
-      </div>
-    </div>
-  </div>
+
 
 
 
