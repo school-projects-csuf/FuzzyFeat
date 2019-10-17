@@ -9,6 +9,15 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
+<style>
+body {
+  background-image: url("img/backgroundIndex.jpg");
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
 </head>
 
 <body>
@@ -47,7 +56,7 @@
   </header>
 
   </div>
-  <div class="container">
+  <div class="container" style="background:white">
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark" id="welcomeJumbo">
       <div class="col-md-6 px-0">
         <h1 class="display-4 font-italic">WELCOME</h1>
@@ -76,6 +85,34 @@
         </div>
       </div>
     </div>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Bottom navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropup">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown10">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
   </div>
