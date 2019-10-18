@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true"></audio>
+  <!-- <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio> -->
   <style>
     body {
       background-image: url("img/backgroundIndex.jpg");
@@ -42,8 +42,6 @@
 </head>
 
 <body>
-
-
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,9 +65,10 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:20pt;">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size:20pt;">Search</button>
           </form>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html" style="font-size:20pt;">Log In</a>
-          </li>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#exampleModal">
+            Log in
+          </button>
           <li class="nav-item">
             <a class="nav-link" href="signup.html" style="font-size:20pt;">Sign Up</a>
           </li>
@@ -84,6 +83,38 @@
         <li><a href="welcomePage.html" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
       </ul>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please log in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- log in form -->
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Log in</button>
+              <small class="form-text text-muted">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
 
