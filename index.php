@@ -112,7 +112,7 @@
               <small class="form-text text-muted">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
             </form>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   </header>

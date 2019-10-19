@@ -32,4 +32,3 @@ if ($resultCheck < 1) {
     }
   }
 ?>
-SELECT * FROM `user` WHERE `UID` = 'flipzoid82'
