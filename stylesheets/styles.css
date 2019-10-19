@@ -82,7 +82,9 @@
   padding-left: 2%;
   padding-top: 3%;
   width:15%;
-  height: 570px;
+  height:81%;
+  height: 81vh;
+  /* position:fixed; */
   background-color: rgb(240, 240, 240);
 }
 
@@ -90,9 +92,11 @@
   float:left;
   word-wrap:break-word;
   width: 70%;
-  height:550px;
+  height:81%;
+  height:81vh;
   padding-left:20px;
   padding-right: 20px;
+  /* position:fixed; */
   /* text-align:center; */
   overflow-y: scroll;
   /* background-color: rgb(100, 250, 100); */
@@ -104,6 +108,7 @@
   padding-left: 2%;
   padding-top: 3%;
   width:15%;
-  height: 570px;
+  height:81%;
+  height: 81vh;
   background-color: rgb(240, 240, 240);
 }
