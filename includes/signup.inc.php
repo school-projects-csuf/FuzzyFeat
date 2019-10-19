@@ -22,5 +22,5 @@
   }else{
 	header("Location: ../profile.html?signup=success");
 	exit();
-  }
+  } 
 ?>
