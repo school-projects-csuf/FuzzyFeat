@@ -21,13 +21,14 @@
       height: 50px;
       width: 110px;
       font-size: 20pt;
+      line-height: 20px;
       justify-content: center;
     }
     .navbar-brand {
       padding: 0 15px;
-      height: 80px;
-      line-height: 80px;
-      font-size: 50pt;
+      height: 50px;
+      line-height: 45px;
+      font-size: 30pt;
     }
     .navbar-nav {
       height: 50px;
@@ -47,6 +48,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <a class="navbar-brand" href="index.html">Fuzzy Feat</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <!-- Example single danger button -->
@@ -60,29 +62,27 @@
             <a class="dropdown-item" href="#">Create A Quiz</a>
           </div>
         </div>
+
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:20pt;">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size:20pt;">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:15pt;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size:15pt;">Search</button>
           </form>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#exampleModal" >
             Log in
           </button>
           <li class="nav-item">
-            <a class="nav-link" href="signup.html" style="font-size:20pt;">Sign Up</a>
+            <a class="nav-link" href="signup.html" style="font-size:15pt;line-height: 35px;">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <img src="img/indexStamp.png" style="margin-left: 500px;margin-top: 150px;width:60%;height:60%;">
+    <!--indexStampLogo-->
+    <img src="img/indexStamp.png" style="position: absolute; margin-left: 500px;margin-top: 150px;width:60%;height:60%;">
 
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-      <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-        <li><a href="welcomePage.html" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
-      </ul>
-    </nav>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
@@ -112,11 +112,18 @@
               <small class="form-text text-muted">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
             </form>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </header>
 
+<footer>
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+  <li><a href="welcomePage.html" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
+  </ul>
+</nav>
+</footer>
 
 
 
