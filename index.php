@@ -47,7 +47,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Fuzzy Feat</a>
+      <a class="navbar-brand" href="index.php">Fuzzy Feat</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <!-- Example single danger button -->
         <div class="btn-group">
@@ -57,7 +57,7 @@
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Take A Quiz</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Create A Quiz</a>
+            <a class="dropdown-item" href="create.html">Create A Quiz</a>
           </div>
         </div>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
