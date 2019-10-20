@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio> 
+  <!-- <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>  -->
   <style>
     body {
       background-image: url("img/background_index2.png");
