@@ -35,7 +35,7 @@
       }
 
       else{
-        alert("Account Created");
+        alert("Account Created. Please Login!");
         return true;
       }
     }
@@ -50,11 +50,10 @@
 
   <!-- Sign up form -->
   <div class="container" id="SignUpContainer">
-  <form onSubmit= "return checkPassword(this)">
     <div class="row">
       <div class="col-md"></div>
       <div class="col-md-4 align-self-center text-center">
-        <form action="includes/signup.inc.php" method="POST">
+        <form action="includes/signup.inc.php" method="POST" onSubmit= "return checkPassword(this)">
           <div class="form-group">
             <input type="text" class="form-control" name="fname" placeholder="First name" required>
           </div>
@@ -65,7 +64,7 @@
             <input type="text" class="form-control" name="uid" placeholder="Username" required>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
             <small id="emailHelp" class="form-text text-muted">We <strong>'promise'</strong> to never share your email with anyone else ;)</small>
           </div>
           <div class="form-group">
