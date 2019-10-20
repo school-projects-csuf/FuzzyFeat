@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>
+  <!-- <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio> -->
   <style>
     body {
       background-image: url("img/background_index2.png");
@@ -56,17 +56,6 @@
           <div class="form-group" style="padding-top:10px;">
             <label for="uid">Username or Email address</label>
             <input type="text" name="uid" class="form-control" placeholder="Enter username or email" required>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <!-- Example single danger button -->
-        <div class="btn-group">
-          <button type="button" id="dropdown" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Quiz
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Take A Quiz</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="create.html">Create A Quiz</a>
-
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
@@ -80,17 +69,9 @@
           <small class="form-text text-muted">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
         </form>
       </div>
-
     </div>
   </div>
 
-<footer>
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-  <li><a href="welcomePage.html" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
-  </ul>
-</nav>
-</footer>
 
   <footer>
     <nav class="navbar fixed-bottom navbar-light bg-light">
@@ -99,6 +80,7 @@
     </ul>
   </nav>
   </footer>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
