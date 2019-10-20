@@ -56,6 +56,17 @@
           <div class="form-group" style="padding-top:10px;">
             <label for="uid">Username or Email address</label>
             <input type="text" name="uid" class="form-control" placeholder="Enter username or email" required>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button type="button" id="dropdown" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Quiz
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Take A Quiz</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="create.html">Create A Quiz</a>
+>>>>>>> 49978f046422bbfef256f43ce67ec055ad516497
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
