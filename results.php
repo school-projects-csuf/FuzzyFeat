@@ -5,6 +5,7 @@
   $dbPassword = "admin";
   $dbName = "FuzzyFeatQuizzes";
   $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+  //include_once 'dbh.inc.php';
 
   $sql = "SELECT * FROM `characters` WHERE `charID` = 'Black Widow'";
   $result = mysqli_query($conn, $sql);

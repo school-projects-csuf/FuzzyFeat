@@ -1,3 +1,9 @@
+<?php
+	session_start();
+  $fname = $_SESSION['fname'];
+	$lname = $_SESSION['lname'];
+	include_once 'includes/dbh.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -14,10 +20,10 @@
 <body>
   <!-- main header -->
   <?php
-    include("header_main.html")
+    include("header_main.php")
   ?>
   <!-- Begin body -->
-  <div class="container">
+  <div class="container" style="padding-top:100px;">
     <div class="user-info-container  border rounded">
       <img src="img/user.jpg" class="profile-img" alt="avatar">
       <p class="username"><span class="at">@</span  id="username">Xx360NoScopexX<p>

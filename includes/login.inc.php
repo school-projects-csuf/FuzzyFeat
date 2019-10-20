@@ -21,12 +21,12 @@ if ($resultCheck < 1) {
 				exit();
 			} elseif ($hashedPwdCheck == true) {
 				//Log in the user here
-				$_SESSION['user_id'] = $row['UID'];
-				$_SESSION['user_first'] = $row['fname'];
-				$_SESSION['user_last'] = $row['lname'];
-				$_SESSION['user_email'] = $row['email'];
+				$_SESSION['uid'] = $row['UID'];
+				$_SESSION['fname'] = $row['fname'];
+				$_SESSION['lname'] = $row['lname'];
+				$_SESSION['email'] = $row['email'];
 
-				header("Location: ../profile.html?login=success");
+				header("Location: ../profile.php?login=success");
 				exit();
 			}
     }
