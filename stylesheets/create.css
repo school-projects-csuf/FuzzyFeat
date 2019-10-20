@@ -1,13 +1,23 @@
+body {
+  background-image: linear-gradient(to right, #ED213A, #93291E);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+
 .create-quiz-container {
-  width: 75%;
+  width: 50%;
   background-color: #ededed;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin: 5em auto 0 auto;
-  padding: 5px;
+  margin: 5em auto;
+  padding: 2em;
+  border-radius: 10px;
 }
 
 
 .create-btn {
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
+
