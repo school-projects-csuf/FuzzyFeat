@@ -78,9 +78,6 @@
           <option>Cartoon</option>
         </select>
       </div>
-      <div class="invisible" style="visibility:hidden;">
-        <input type="text" class="form-control" name="uid" value="<?php echo $uid; ?>">
-      </div>
       <!-- Character selection -->
       <label>Character 1</label>
       <select class="form-control" name="char1">

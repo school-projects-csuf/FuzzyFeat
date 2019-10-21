@@ -65,7 +65,7 @@
   $ans5char5 = $_POST['ans5char5'];
 
   //inserting the quiz into the quiz table
-  $sql = "INSERT INTO `quiz` (`quizID`, `quizName`, `quizDesc`, `category`, `uid`) VALUES (NULL, '$quizName', '$quizDesc', '$category', '$uid')";
+  $sql = "INSERT INTO `quiz` (`quizID`, `quizName`, `quizDesc`, `category`, `dayCreated`, `uid`) VALUES (NULL, '$quizName', '$quizDesc', '$category', CURRENT_TIMESTAMP,'$uid')";
 	if (!mysqli_query($conn, $sql)) {
     //here it is
     die('Error: ' . mysql_error());

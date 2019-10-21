@@ -41,26 +41,41 @@
 				$sql = "SELECT * FROM `quiz` WHERE `uid` = '$uid'";
 				$result = mysqli_query($conn, $sql) or die(mysql_error());
 				if(mysqli_num_rows($result) > 0) {
+					$counter = 0;
 					while ($row = mysqli_fetch_assoc($result)) {
+
+						//Sets the category img of the quiz card
+						if ($row['category']=='Movies') {
+							$catImg = 'img/Movies.jpg';
+						}elseif ($row['category']=='Comic Books') {
+							$catImg = 'img/comicbook.jpg';
+						}elseif ($row['category']=='TV') {
+							$catImg = 'img/tv.jpg';
+						}elseif ($row['category']=='Cartoon') {
+							$catImg = 'img/cartoons.jpg';
+						}
+						//converts datetime to readable date and time format
+						$date = date_create($row['dayCreated']);
 						echo '<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">';
 						echo '<div class="col p-4 d-flex flex-column position-static">';
 						echo '<strong class="d-inline-block mb-2 text-primary">'.$row["category"].'</strong>';
 						echo '<h3 class="mb-0">'.$row["quizName"].'</h3>';
-						echo '<div class="mb-1 text-muted">Oct 12</div>';
+						echo '<div class="mb-1 text-muted">'.date_format($date, DATE_COOKIE).'</div>';
 						echo '<p class="card-text mb-auto">'.$row["quizDesc"].'</p>';
-						echo '<a href="quiz.php" class="stretched-link">Take quiz</a>';
+						//links to the next page with variable passed to the url
+						echo '<a href="quiz.php?quizID='.$row["quizID"].'" class="stretched-link">Take quiz</a>';
 						echo '</div>';
-						echo '<div class="col-auto d-none d-lg-block">';
-						echo '<img src="img/disney.jpg" width="250" height="250">';
+						echo '<div class="col-auto float-right">';
+						echo '<img src="'.$catImg.'" width="250" height="250">';
 						echo '</div>';
 						echo '</div>';
+						$counter++;
 					}
 				}else{
-					echo '<div class="review" style="width:50%;height:200px;float:left;display:inline;">
-    						You haven\'t made any quizzes yet. What are you waiting for?
+					echo '<div class="container md-auto">
+    						<h3>You haven\'t made any quizzes yet. What are you waiting for?</h3>
     						</div>';
 				}
-				mysql_free_result($result);
 				?>
       </div>
     </div>
