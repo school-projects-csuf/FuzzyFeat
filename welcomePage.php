@@ -26,7 +26,7 @@
     include("header.html")
   ?>
 
-  <div class="container" style="padding-top:200px;">
+  <div class="container" style="padding-top:80px;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -35,9 +35,8 @@
       </ol>
       <div class="carousel-inner" >
         <!--550px-->
-
         <div class="carousel-item active">
-          <img class="d-block w-100" src="img/characterImg/ironman.png" alt="First slide"style="height:550px;">
+          <img class="d-block w-100" src="img/characterImg/ironman.png" alt="First slide">
           <!--QuizCard-->
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
             <div class="col p-4 d-flex flex-column position-static">
@@ -55,7 +54,7 @@
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/characterImg/batman.jpg" alt="Second slide" style="height:550px;">
+          <img class="d-block w-100" src="img/characterImg/batman.jpg" alt="Second slide" >
           <!--QuizCard-->
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
             <div class="col p-4 d-flex flex-column position-static">
@@ -72,7 +71,7 @@
           <!--End of QuizCard-->
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/characterImg/joker.jpg" alt="Third slide" style="height:550px;">
+          <img class="d-block w-100" src="img/characterImg/joker.jpg" alt="Third slide" >
           <!--QuizCard-->
           <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
             <div class="col p-4 d-flex flex-column position-static">

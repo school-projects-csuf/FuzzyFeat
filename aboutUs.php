@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="stylesheets/aboutUs.css">
     <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>
   </head>
-  <body>
+  <body style="padding-bottom: 90px;">
     <!-- header file -->
     <?php
       include("header.html")
     ?>
     <!-- splash logo -->
-    <a href="welcomePage.php"><img class="splashLogo" src="img/splashLogo2.png" alt="Fuzzy Feat"></a>
+    <a href="welcomePage.php"><img class="splashLogo" src="img/splashLogo2.png" alt="Fuzzy Feat" style="left: 0px; top: 60px;width: 470px; height: 470px;"></a>
 
     <div class="container marketing " style="margin-top: 100px;">
     <!-- Three columns of text below the carousel -->

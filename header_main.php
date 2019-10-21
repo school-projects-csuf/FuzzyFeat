@@ -34,7 +34,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<a class="navbar-brand" href="index.php">Fuzzy Feat</a>
+		<a class="navbar-brand" href="profile.php">Fuzzy Feat</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 			<!-- Example single danger button -->
 			<div class="btn-group">
