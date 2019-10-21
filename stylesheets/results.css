@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/resultBg6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+   background: rgba(255, 255, 255, 0.5);
+}

@@ -55,8 +55,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/results.css">
   </head>
-
+<img src="img/splashLogo2.png" alt="" style="position: absolute; width:25%;height:50%; bottom:390px; left:0px;transform: rotate(-15deg); z-index:1;  ">
   <body>
     <!-- main header -->
     <?php
@@ -64,15 +65,20 @@
     ?>
 
     <!-- results body begins -->
-    <div class="container-fluid ">
+    <div class="container ">
       <div class="row justify-content-md-center" style="padding-top: 100px;">
         <div class="col-lg-auto">
-          <div class="jumbotron jumbotron-fluid" style="text-align:center;">
-            <img src="img/splashLogo5.png" alt="" style="position: absolute; bottom: 500px; left:-400px;transform: rotate(-15deg);">
+
+          <div class="jumbotron " style="text-align:center;">
+
             <div class="container ">
-              <img src="<?php echo $cImg; ?>" alt="" style="max-width:1110px; max-height:1000px;"> <!--placeholder-->
+              <img src="<?php echo $cImg; ?>" alt="" style="width:800px; height:500px;"> <!--placeholder-->
               <p class="lead" style="font-size:27pt;"><?php echo $cDesc; ?></p>
             </div>
+            <form class="" action="categoryList.html" method="post">
+              <button type="submit" class="btn btn-success">Take Another Quiz</button>
+            </form>
+
           </div>
         </div>
       </div>
