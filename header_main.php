@@ -54,7 +54,7 @@
 			<div class="container">
 				<div class="d-flex justify-content-center">
 					<div class="col-md-auto">
-						<div class="navbar-nav flex-row " style="padding-left:200px; color:white;padding-top:10px;">
+						<div class="navbar-nav flex-row" style="padding-left:200px; color:white; padding-top:10px;">
 							<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?>
 						</div>
 					</div>
