@@ -2,7 +2,43 @@
 <?php
   include_once 'includes/dbh.inc.php';
 
-  $charID = "Ant-Man";
+  $ans1 = $_POST['ans1'];
+  $ans2 = $_POST['ans2'];
+  $ans3 = $_POST['ans3'];
+  $ans4 = $_POST['ans4'];
+  $ans5 = $_POST['ans5'];
+
+  $sql = "SELECT * FROM `answer` WHERE `ansDesc` = '$ans1'";
+  $result = mysqli_query($conn, $sql) or die(mysql_error());
+  $row = mysqli_fetch_assoc($result);
+  $ans1CID = $row['cID'];
+
+  $sql = "SELECT * FROM `answer` WHERE `ansDesc` = '$ans2'";
+  $result = mysqli_query($conn, $sql) or die(mysql_error());
+  $row = mysqli_fetch_assoc($result);
+  $ans2CID = $row['cID'];
+
+  $sql = "SELECT * FROM `answer` WHERE `ansDesc` = '$ans3'";
+  $result = mysqli_query($conn, $sql) or die(mysql_error());
+  $row = mysqli_fetch_assoc($result);
+  $ans3CID = $row['cID'];
+
+  $sql = "SELECT * FROM `answer` WHERE `ansDesc` = '$ans4'";
+  $result = mysqli_query($conn, $sql) or die(mysql_error());
+  $row = mysqli_fetch_assoc($result);
+  $ans4CID = $row['cID'];
+
+  $sql = "SELECT * FROM `answer` WHERE `ansDesc` = '$ans5'";
+  $result = mysqli_query($conn, $sql) or die(mysql_error());
+  $row = mysqli_fetch_assoc($result);
+  $ans5CID = $row['cID'];
+
+  $charResults = array($ans1CID, $ans2CID, $ans3CID, $ans4CID, $ans5CID);
+
+  $result = array_count_values($charResults);
+  asort($result);
+  end($result);
+  $charID = key($result);
 
   $sql = "SELECT * FROM `characters` WHERE `charID` = '$charID'";
   $result = mysqli_query($conn, $sql);
@@ -41,6 +77,10 @@
         </div>
       </div>
     </div>
+
+    <?php
+      include("footer.html")
+    ?>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

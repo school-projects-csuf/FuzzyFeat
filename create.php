@@ -369,6 +369,9 @@
     </form>
 
   </div>
+  <?php
+    include("footer.html")
+  ?>
 
 
   <!-- js. -->

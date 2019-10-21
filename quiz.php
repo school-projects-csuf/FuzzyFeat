@@ -36,6 +36,7 @@
     $Q1ansDesc = array();
     while ($row = mysqli_fetch_assoc($result)) {
       $Q1ansDesc[$i] = $row['ansDesc'];
+      $Q1ansCID[$i] = $row['cID'];
       $i++;
     }
   }
@@ -48,6 +49,7 @@
     $Q2ansDesc = array();
     while ($row = mysqli_fetch_assoc($result)) {
       $Q2ansDesc[$i] = $row['ansDesc'];
+      $Q2ansCID[$i] = $row['cID'];
       $i++;
     }
   }
@@ -60,6 +62,7 @@
     $Q3ansDesc = array();
     while ($row = mysqli_fetch_assoc($result)) {
       $Q3ansDesc[$i] = $row['ansDesc'];
+      $Q3ansCID[$i] = $row['cID'];
       $i++;
     }
   }
@@ -72,6 +75,7 @@
     $Q4ansDesc = array();
     while ($row = mysqli_fetch_assoc($result)) {
       $Q4ansDesc[$i] = $row['ansDesc'];
+      $Q4ansCID[$i] = $row['cID'];
       $i++;
     }
   }
@@ -84,6 +88,7 @@
     $Q5ansDesc = array();
     while ($row = mysqli_fetch_assoc($result)) {
       $Q5ansDesc[$i] = $row['ansDesc'];
+      $Q5ansCID[$i] = $row['cID'];
       $i++;
     }
   }
@@ -115,7 +120,7 @@
         <form action="results.php" method="post">
           <div class="quiz-question">
             <label name><?php echo $questionDesc[0]; ?></label>
-            <select class="form-control" id="ans1" name"ans1">
+            <select class="form-control"name="ans1">
               <option name="q1a1"><?php echo $Q1ansDesc[0]; ?></option>
               <option name="q1a2"><?php echo $Q1ansDesc[1]; ?></option>
               <option name="q1a3"><?php echo $Q1ansDesc[2]; ?></option>
@@ -126,7 +131,7 @@
           <!-- Question 2 -->
           <div class="quiz-question">
             <label name><?php echo $questionDesc[1]; ?></label>
-            <select class="form-control" id="ans1" name"ans1">
+            <select class="form-control" name="ans2">
               <option name="q2a1"><?php echo $Q2ansDesc[0]; ?></option>
               <option name="q2a2"><?php echo $Q2ansDesc[1]; ?></option>
               <option name="q2a3"><?php echo $Q2ansDesc[2]; ?></option>
@@ -137,7 +142,7 @@
           <!-- Question 3 -->
           <div class="quiz-question">
             <label name><?php echo $questionDesc[2]; ?></label>
-            <select class="form-control" id="ans1" name"ans1">
+            <select class="form-control" name="ans3">
               <option name="q3a1"><?php echo $Q3ansDesc[0]; ?></option>
               <option name="q3a2"><?php echo $Q3ansDesc[1]; ?></option>
               <option name="q3a3"><?php echo $Q3ansDesc[2]; ?></option>
@@ -148,7 +153,7 @@
           <!-- Question 4 -->
           <div class="quiz-question">
             <label name><?php echo $questionDesc[3]; ?></label>
-            <select class="form-control" id="ans1" name"ans1">
+            <select class="form-control" name="ans4">
               <option name="q4a1"><?php echo $Q4ansDesc[0]; ?></option>
               <option name="q4a2"><?php echo $Q4ansDesc[1]; ?></option>
               <option name="q4a3"><?php echo $Q4ansDesc[2]; ?></option>
@@ -159,7 +164,7 @@
           <!-- Question 5 -->
           <div class="quiz-question">
             <label name><?php echo $questionDesc[4]; ?></label>
-            <select class="form-control" id="ans1" name"ans1">
+            <select class="form-control" name="ans5">
               <option name="q5a1"><?php echo $Q5ansDesc[0]; ?></option>
               <option name="q5a2"><?php echo $Q5ansDesc[1]; ?></option>
               <option name="q5a3"><?php echo $Q5ansDesc[2]; ?></option>
@@ -172,5 +177,8 @@
         </form>
       </div>
     </div>
+    <?php
+      include("footer.html")
+    ?>
   </body>
 </html>
