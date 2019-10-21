@@ -19,7 +19,7 @@
   <title>Profile</title>
 </head>
 
-<body>
+<body style="background-image:url('backgroundindex.jpg');">
   <!-- main header -->
   <?php
     include("header_main.php")
