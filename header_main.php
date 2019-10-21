@@ -51,6 +51,21 @@
 			<div class="navbar-nav flex-row" style="padding-left:200px; color:white;">
 				<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet.'; ?></p>
 			</div>
+<<<<<<< HEAD
+			<div class="container">
+				<div class="d-flex justify-content-center">
+					<div class="col-md-auto">
+						<div class="navbar-nav flex-row" style="padding-left:200px; color:white; padding-top:10px;">
+							<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+=======
+>>>>>>> 423a5110a891ba6307dda37a03b45efdbf5759d3
 			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 				<form class="form-inline my-2 my-lg-0" action="includes/logout.inc.php" method="post">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="font-size:15pt;">
