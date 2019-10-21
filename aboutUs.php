@@ -44,7 +44,7 @@
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img class="img-mask" src="img/creatorImg/hao.jpg" alt="">
+        <img class="img-mask" src="img/creatorImg/hao2.jpg" alt="">
         <h2>Hao Nguyen</h2>
         <p>When's dinner?</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
