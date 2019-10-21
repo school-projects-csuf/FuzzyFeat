@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <?php
-  $dbServername = "localhost";
-  $dbUsername = "admin";
-  $dbPassword = "admin";
-  $dbName = "FuzzyFeatQuizzes";
-  $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
-  //include_once 'dbh.inc.php';
+  include_once 'includes/dbh.inc.php';
 
-  $sql = "SELECT * FROM `characters` WHERE `charID` = 'Black Widow'";
+  $charID = "Ant-Man";
+
+  $sql = "SELECT * FROM `characters` WHERE `charID` = '$charID'";
   $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_assoc($result);
   $cName = $row['charID'];
@@ -25,9 +22,13 @@
   </head>
 
   <body>
+    <!-- main header -->
+    <?php
+      include("header_main.php")
+    ?>
 
+    <!-- results body begins -->
     <div class="container-fluid ">
-
       <div class="row justify-content-md-center" style="padding-top: 100px;">
         <div class="col-lg-auto">
           <div class="jumbotron jumbotron-fluid" style="text-align:center;">

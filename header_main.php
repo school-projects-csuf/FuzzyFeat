@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$uid = $_SESSION['uid'];
   $fname = $_SESSION['fname'];
 	$lname = $_SESSION['lname'];
 	include_once 'includes/dbh.inc.php';
