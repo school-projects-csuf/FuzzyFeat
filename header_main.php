@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="navbar-nav flex-row" style="padding-left:200px; color:white;">
-				<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?>
+				<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?></p>
 			</div>
 
 			<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
