@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheets/aboutUs.css">
     <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>
   </head>
-  <body style="padding-bottom: 90px;">
+  <body style="padding-bottom: 90px; background-size:100% 100%;">
     <!-- header file -->
     <?php
       include("header.html")

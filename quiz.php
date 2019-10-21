@@ -5,7 +5,10 @@
     <!-- css. -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/takequiz.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <audio src="sounds/jeopardy.mp3" autoplay hidden="true" loop="true" ></audio>
     <title>Take a Quiz</title>
   </head>
   <body>
@@ -13,7 +16,7 @@
     <?php
       include("header.html")
     ?>
-    
+
     <!-- Begin Take a Quiz Section -->
     <div class="take-quiz-container">
       <h1 class="quiz-name" name="quizName">PLACEHOLDER FOR QUIZ NAME</h1>
