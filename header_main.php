@@ -46,10 +46,10 @@
 					<a class="dropdown-item" href="create.php">Create A Quiz</a>
 				</div>
 			</div>
-<<<<<<< HEAD
+
 			<div class="navbar-nav flex-row" style="padding-left:200px; color:white;">
 				<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?></p>
-=======
+			</div>
 			<div class="container">
 				<div class="d-flex justify-content-center">
 					<div class="col-md-auto">
@@ -57,9 +57,7 @@
 							<p>Welcome! <?php echo $fname.' '.$lname.'! Relax your feet and go make some quizzes.'; ?>
 						</div>
 					</div>
-
 				</div>
->>>>>>> 9bb8d0ed36f23383a07b3c02e4a9eaabcf8d1dc9
 			</div>
 
 
