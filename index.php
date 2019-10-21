@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio> 
+  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>
   <style>
     body {
       background-image: url("img/background_index2.png");
@@ -52,13 +52,9 @@
   </div>
 
 
-  <footer>
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <li><a href="welcomePage.php" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
-    </ul>
-  </nav>
-  </footer>
+  <?php
+    include("footer.html")
+  ?>
 
 
 
