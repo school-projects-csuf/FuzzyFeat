@@ -42,7 +42,7 @@
 					Quiz
 				</button>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" href="quiz.php">Take A Quiz</a>
+					<a class="dropdown-item" href="categoryList.php">Take A Quiz</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="create.php">Create A Quiz</a>
 				</div>

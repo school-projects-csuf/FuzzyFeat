@@ -1,12 +1,9 @@
 <?php
-	session_start();
-  $fname = $_SESSION['fname'];
-	$lname = $_SESSION['lname'];
-	$uid = $_SESSION['uid'];
-
 	include_once 'includes/dbh.inc.php';
 ?>
+
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -15,32 +12,36 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="stylesheet" href="stylesheets/profile.css">
-  <title>Profile</title>
+  <title>Home</title>
 </head>
 
 <body>
-  <!-- main header -->
+  <!-- header file -->
   <?php
-    include("header_main.php")
+    include("header.html")
   ?>
-	<?php
-		include("footer.html")
-	?>
-  <!-- Begin body -->
-  <div class="container" style="padding-top:100px;">
-    <div class="user-info-container  border rounded">
-      <img src="img/user.jpg" class="profile-img" alt="avatar">
-      <p class="username"><span class="at">@</span  id="username">Xx360NoScopexX<p>
-      <p>On the weekends I like to play Call of Duty with a cup of ice cold chocolate milk served by mommy.</p>
+
+  <div class="categoryTitle" id="categoryTitle">Categories</div>
+
+  <section>
+    <div class="left">
+      <img src="img/plus.png" width="85%" height="240">
+      <br><br>
+      <img src="img/plus.png" width="85%" height="240">
     </div>
-    <div class="user-quizzes-container">
-      <h1>Quizzes</h1>
-        <hr>
+
+    <div class="mid">
+      <div style="text-align: center;">
+        <a href="categoryCartoon.php"><img src="img/cartoon.png" width="200px" height="200px" alt="Cartoon Category"> </a>
+        <a href="categoryTV.php"> <img src="img/TV.png" width="200px" height="200px" alt="TV Category"> </a>
+        <a href="categoryComic.php"><img src="img/comic.png" width="200px" height="200px" alt="Comic category"> </a>
+        <a href="categoryMovie.php"><img src="img/Movie.png" width="200px" height="200px" alt="Movie category"> </a>
+      </div>
+      <h3 style="padding-top: 20px;"> Recommended </h3>
       <!-- Quiz list. -->
       <div class="quizzes-container">
 				<?php
-				$sql = "SELECT * FROM `quiz` WHERE `uid` = '$uid'";
+				$sql = "SELECT * FROM `quiz`";
 				$result = mysqli_query($conn, $sql) or die(mysql_error());
 				if(mysqli_num_rows($result) > 0) {
 					$counter = 0;
@@ -80,16 +81,10 @@
 				}
 				?>
 
-      </div>
 
     </div>
 
-  </div>
-
-  <!-- js. -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </section>
 </body>
 
 </html>
