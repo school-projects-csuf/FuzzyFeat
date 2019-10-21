@@ -65,7 +65,7 @@
           </div>
           <div class="form-group">
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
-            <small id="emailHelp" class="form-text text-muted">We <strong>'promise'</strong> to never share your email with anyone else ;)</small>
+            <small id="emailHelp" class="form-text" style="color:white;">We <strong>'promise'</strong> to never share your email with anyone else ;)</small>
           </div>
           <div class="form-group">
             <input type="password" name="password" class="form-control" placeholder="Password">
@@ -74,7 +74,7 @@
             <input type="password" name="password2" class="form-control" laceholder="Confirm password">
           </div>
           <input type="submit" value = "Submit" class="btn btn-primary self-align-center">
-          <small id="emailHelp" class="form-text text-muted">Already have an account? <a href="login.html">Login here</small></a>
+          <small id="emailHelp" class="form-text" style="color:white;">Already have an account? <a href="login.html">Login here</small></a>
         </form>
       </div>
       <div class="col-md"></div>
