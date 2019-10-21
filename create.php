@@ -75,7 +75,6 @@
         <option>Thanos</option>
         <option>Thor</option>
         <option>Woody</option>
-
       </select>
       <label>Character 2</label>
       <select class="form-control" name="char2">

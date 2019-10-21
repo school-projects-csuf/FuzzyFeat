@@ -1,0 +1,60 @@
+.display-4{
+  color: rgb(219, 161, 94);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 75px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px
+}
+
+body{
+  background-image: url("../img/aboutUsBg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row{
+  background: rgba(255,255,255, .5);
+  border-radius: 10px;
+
+}
+
+.col-md-7 {
+  padding-top: 10px;
+}
+
+.bd-placeholder-img {
+  opacity: 1;
+}
+
+h2, p{
+  color: white;
+}
+.img-mask {
+   clip-path: circle(65px at center);
+   width:140px;
+   height:140px;
+   margin-left:50px;
+}
+.catcher {
+  color: black;
+}
+
+.placeholder {
+  width:450px;
+  height:325px;
+}
+
+.splashLogo {
+  position: absolute;
+  transform: rotate(-15deg);
+  top: 40px;
+  left:50px;
+}

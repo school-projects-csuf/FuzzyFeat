@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
-
+  <audio src="sounds/vibe.mp3" autoplay hidden="true" loop="true" ></audio>
   <style>
     body {
       background-image: url("img/backgroundIndex.jpg");
@@ -100,23 +100,10 @@
     </div>
   </div>
 
-  <footer>
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark" style="height:5%">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-      <a class="nav-link" href="index.php"><img src="img/splashLogo5.png" alt="" style="width:170px; height:170px;"></a>
-    </nav>
-
-  </footer>
-
+  <!-- insert footer here -->
+  <?php
+    include("footer.html")
+  ?>
 
 
 

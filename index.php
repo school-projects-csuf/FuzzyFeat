@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <!-- <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>  -->
+  <audio src="sounds/underTale.mp3" autoplay hidden="true" loop="true" ></audio>
   <style>
     body {
       background-image: url("img/background_index2.png");
@@ -17,27 +17,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    #dropdown {
-      height: 50px;
-      width: 110px;
-      font-size: 20pt;
-      line-height: 20px;
-      justify-content: center;
-    }
-    .navbar-brand {
-      padding: 0 15px;
-      height: 50px;
-      line-height: 45px;
-      font-size: 30pt;
-    }
-    .navbar-nav {
-      height: 50px;
-      justify-content: center;
-    }
-    .nextBTN {
-      height: 20px;
-    }
-
   </style>
 
 </head>
@@ -51,7 +30,7 @@
   <!-- main body -->
   <div class="container" style="padding-top:150px; color:white;">
     <div class="row">
-      <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: gray;">
+      <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: rgba(128, 128, 128, .75);">
         <form action="includes/login.inc.php" method="POST">
           <div class="form-group" style="padding-top:10px;">
             <label for="uid">Username or Email address</label>
@@ -66,7 +45,7 @@
             <label class="form-check-label" for="exampleCheck1">Remember me</label>
           </div>
           <button type="submit" class="btn btn-primary">Log in</button>
-          <small class="form-text text-muted">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
+          <small class="form-text" style="color:white;">Don't have an account yet? <a href="signup.html">Sign up here.</small></a>
         </form>
       </div>
     </div>
