@@ -5,9 +5,6 @@
 	$uid = $_SESSION['uid'];
 
 	include_once 'includes/dbh.inc.php';
-
-	
-
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -19,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="stylesheet" href="stylesheets/profile.css">
-  <title>Home</title>
+  <title>Profile</title>
 </head>
 
 <body>
@@ -40,44 +37,31 @@
       <!-- Remove div below. just here for testing. -->
       <div class="quizzes-container">
         <!-- quiz 1 -->
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Disney</strong>
-            <h3 class="mb-0">Which Disney princess are you?</h3>
-            <div class="mb-1 text-muted">Oct 12</div>
-            <p class="card-text mb-auto">Do you like sleeping, eating apples, taking care of dwarves, or swimmming with fish? Find out who you would be in an alternate Disney unverse.</p>
-            <a href="#" class="stretched-link">Take quiz</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="img/disney.jpg" width="250" height="250">
-          </div>
-        </div>
-        <!-- quiz 2 -->
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Action</strong>
-            <h3 class="mb-0">James Bond, John Wick, Rambo or Batman?</h3>
-            <div class="mb-1 text-muted">Oct 10</div>
-            <p class="card-text mb-auto">Determine which badass action character your morning routine best resembles.</p>
-            <a href="#" class="stretched-link">Take quiz</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="img/wick.jpg" width="250" height="250">
-          </div>
-        </div>
-        <!-- quiz 3 -->
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Fantasy</strong>
-            <h3 class="mb-0">Are you Sauron or Samwise Gamgee?</h3>
-            <div class="mb-1 text-muted">Oct 1</div>
-            <p class="card-text mb-auto">Dive into the world of Tolkien and determine whether you are a nice guy who finishes last or an evil necromancer.</p>
-            <a href="#" class="stretched-link">Take quiz</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img src="img/samwise.jpg" width="250" height="250">
-          </div>
-        </div>
+				<?php
+				$sql = "SELECT * FROM `quiz` WHERE `uid` = '$uid'";
+				$result = mysqli_query($conn, $sql) or die(mysql_error());
+				if(mysqli_num_rows($result) > 0) {
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo '<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">';
+						echo '<div class="col p-4 d-flex flex-column position-static">';
+						echo '<strong class="d-inline-block mb-2 text-primary">'.$row["category"].'</strong>';
+						echo '<h3 class="mb-0">'.$row["quizName"].'</h3>';
+						echo '<div class="mb-1 text-muted">Oct 12</div>';
+						echo '<p class="card-text mb-auto">'.$row["quizDesc"].'</p>';
+						echo '<a href="quiz.php" class="stretched-link">Take quiz</a>';
+						echo '</div>';
+						echo '<div class="col-auto d-none d-lg-block">';
+						echo '<img src="img/disney.jpg" width="250" height="250">';
+						echo '</div>';
+						echo '</div>';
+					}
+				}else{
+					echo '<div class="review" style="width:50%;height:200px;float:left;display:inline;">
+    						You haven\'t made any quizzes yet. What are you waiting for?
+    						</div>';
+				}
+				mysql_free_result($result);
+				?>
       </div>
     </div>
   </div>
