@@ -67,6 +67,7 @@
   //inserting the quiz into the quiz table
   $sql = "INSERT INTO `quiz` (`quizID`, `quizName`, `quizDesc`, `category`, `uid`) VALUES (NULL, '$quizName', '$quizDesc', '$category', '$uid')";
 	if (!mysqli_query($conn, $sql)) {
+    //here it is
     die('Error: ' . mysql_error());
   }else{
     //Fetching the quizID that was just created above
