@@ -280,6 +280,6 @@
   if (!mysqli_query($conn, $sql)) {
     die('Error: ' . mysql_error());
   }
-  header("Location: ../index.php?quizCreated=success");
+  header("Location: ../profile.php?quizCreated=success");
   exit();
 ?>
