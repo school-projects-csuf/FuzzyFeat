@@ -30,7 +30,11 @@
   <!-- main body -->
   <div class="container" style="padding-top:150px; color:white;">
     <div class="row">
+
       <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: rgba(128, 128, 128, .75);">
+
+      <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: #f7f7f7; color: black;">
+
         <form action="includes/login.inc.php" method="POST">
           <div class="form-group" style="padding-top:10px;">
             <label for="uid">Username or Email address</label>

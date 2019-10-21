@@ -5,7 +5,7 @@
 // $dbName = "heroku_ad3d2aecaa3717c";
 // $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
-$dbServername = "localhost";
+$dbServername = "localhost:8889";
 $dbUsername = "admin";
 $dbPassword = "admin";
 $dbName = "FuzzyFeatQuizzes";
