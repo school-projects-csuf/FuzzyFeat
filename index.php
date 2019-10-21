@@ -30,11 +30,7 @@
   <!-- main body -->
   <div class="container" style="padding-top:150px; color:white;">
     <div class="row">
-
       <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: rgba(128, 128, 128, .75);">
-
-      <div class="col-3" style="border: 1px solid white; border-radius: 10px; background-color: #f7f7f7; color: black;">
-
         <form action="includes/login.inc.php" method="POST">
           <div class="form-group" style="padding-top:10px;">
             <label for="uid">Username or Email address</label>
@@ -56,9 +52,13 @@
   </div>
 
 
-  <?php
-    include("footer.html")
-  ?>
+  <footer>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li><a href="welcomePage.php" id="nextPageBTN"class="nextBTN"><img src="img/indexNextBtn.png" style="width:400px;height:150px;padding-bottom:40px;"></a></li>
+    </ul>
+  </nav>
+  </footer>
 
 
 
