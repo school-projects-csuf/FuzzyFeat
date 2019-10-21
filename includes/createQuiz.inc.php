@@ -68,7 +68,7 @@
   $sql = "INSERT INTO `quiz` (`quizID`, `quizName`, `quizDesc`, `category`, `uid`) VALUES (NULL, '$quizName', '$quizDesc', '$category', '$uid')";
 	if (!mysqli_query($conn, $sql)) {
     //here it is
-    //die('Error: ' . mysql_error());
+    die('Error: ' . mysql_error());
   }else{
     //Fetching the quizID that was just created above
     $sql = "SELECT * FROM `quiz` WHERE `quizDesc` = '$quizDesc' AND `uid` = '$uid'";
@@ -280,6 +280,6 @@
   if (!mysqli_query($conn, $sql)) {
     die('Error: ' . mysql_error());
   }
-  header("Location: ../index.php?quizCreated=success");
+  header("Location: ../profile.php?quizCreated=success");
   exit();
 ?>

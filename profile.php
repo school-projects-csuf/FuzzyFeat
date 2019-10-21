@@ -2,7 +2,12 @@
 	session_start();
   $fname = $_SESSION['fname'];
 	$lname = $_SESSION['lname'];
+	$uid = $_SESSION['uid'];
+
 	include_once 'includes/dbh.inc.php';
+
+	
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

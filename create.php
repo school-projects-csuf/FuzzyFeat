@@ -10,6 +10,43 @@
   <!-- css. -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheets/create.css">
+
+  <script>
+    function checkChar(form) {
+      char1 = form.char1.value;
+      char2 = form.char2.value;
+      char3 = form.char3.value;
+      char4 = form.char4.value;
+      char5 = form.char5.value;
+
+      if ((char1 == char2) || (char1 == char3) || (char1 == char4) || (char1 == char5)){
+        alert ("Please choose different characters");
+        return false;
+      }
+      if ((char2 == char1) || (char2 == char3) || (char2 == char4) || (char2 == char5)){
+        alert ("Please choose different characters");
+        return false;
+      }
+      if ((char3 == char1) || (char3 == char2) || (char3 == char4) || (char3 == char5)){
+        alert ("Please choose different characters");
+        return false;
+      }
+      if ((char4 == char1) || (char4 == char2) || (char4 == char3) || (char4 == char5)){
+        alert ("Please choose different characters");
+        return false;
+      }
+      if ((char5 == char1) || (char5 == char2) || (char5 == char3) || (char5 == char4)){
+        alert ("Please choose different characters");
+        return false;
+      }
+      else{
+        alert("Quiz Created");
+        return true;
+      }
+    }
+  </script>
+
+
   <title>Create a Quiz</title>
 </head>
 
@@ -23,7 +60,7 @@
   <div class="create-quiz-container">
     <h1>Create a Quiz</h1>
     <!-- create quiz form -->
-    <form action="includes/createQuiz.inc.php" method="POST">
+    <form action="includes/createQuiz.inc.php" method="POST" onSubmit= "return checkChar(this)">
       <div class="form-group">
         <label for="quizName">Quiz Name</label>
         <input type="text" class="form-control" name="quizName">
