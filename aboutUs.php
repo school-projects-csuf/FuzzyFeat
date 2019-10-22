@@ -32,7 +32,7 @@
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img class="img-mask" src="img/creatorImg/ian.jpg" alt="">
+        <img class="img-mask" src="img/creatorImg/eli.jpg" alt="">
         <h2>Eli Manzo-De Leon</h2>
         <p>I'm inevitable</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
