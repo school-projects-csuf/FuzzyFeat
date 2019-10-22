@@ -24,10 +24,10 @@
   <div class="categoryTitle" id="categoryTitle">Categories</div>
 
   <section>
-    <div class="left">
-      <img src="img/plus.png" width="85%" height="240">
+		<div class="left">
+      <img src="img/smallAd1.png" width="85%" height="230">
       <br><br>
-      <img src="img/plus.png" width="85%" height="240">
+      <img src="img/smallAd2.png" width="85%" height="230">
     </div>
 
     <div class="mid">
@@ -80,8 +80,6 @@
     						</div>';
 				}
 				?>
-
-
     </div>
 
   </section>
