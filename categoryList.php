@@ -21,7 +21,7 @@
     include("header_main.php")
   ?>
 
-  <div class="categoryTitle" id="categoryTitle">Categories</div>
+  <div class="headingTitle">Quizzes</div>
 
   <section>
 		<div class="left">
@@ -31,6 +31,7 @@
     </div>
 
     <div class="mid">
+      <h3 class="categoryTitle" id="categoryTitle">Categories</h3>
       <div style="text-align: center;">
         <a href="categoryCartoon.php"><img src="img/cartoon.png" width="200px" height="200px" alt="Cartoon Category"> </a>
         <a href="categoryTV.php"> <img src="img/TV.png" width="200px" height="200px" alt="TV Category"> </a>
@@ -40,6 +41,7 @@
       <h3 style="padding-top: 20px;"> Recommended </h3>
       <!-- Quiz list. -->
       <div class="quizzes-container">
+        
 				<?php
 				$sql = "SELECT * FROM `quiz`";
 				$result = mysqli_query($conn, $sql) or die(mysql_error());

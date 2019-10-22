@@ -47,7 +47,7 @@
               <a href="#" class="stretched-link">Take quiz</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="img/disney.jpg" width="250" height="250">
+              <img src="img/comicbook.jpg" width="250" height="250">
             </div>
           </div>
           <!--End of QuizCard-->
@@ -65,7 +65,7 @@
               <a href="#" class="stretched-link">Take quiz</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="img/disney.jpg" width="250" height="250">
+              <img src="img/comicbook.jpg" width="250" height="250">
             </div>
           </div>
           <!--End of QuizCard-->
@@ -82,7 +82,7 @@
               <a href="#" class="stretched-link">Take quiz</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="img/disney.jpg" width="250" height="250">
+              <img src="img/comicbook.jpg" width="250" height="250">
             </div>
           </div>
           <!--End of QuizCard-->
