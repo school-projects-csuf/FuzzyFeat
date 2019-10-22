@@ -1,3 +1,7 @@
+<?php
+	include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -38,52 +42,76 @@
         <div class="carousel-item active">
           <img class="d-block w-100" src="img/characterImg/ironman.png" alt="First slide">
           <!--QuizCard-->
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Editor's Choice</strong>
-              <h3 class="mb-0">Which Avenger Are You?</h3>
-              <div class="mb-1 text-muted">Oct 12</div>
-              <p class="card-text mb-auto">Description of Quiz here</p>
-              <a href="#" class="stretched-link">Take quiz</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <img src="img/comicbook.jpg" width="250" height="250">
-            </div>
-          </div>
-          <!--End of QuizCard-->
+          <!-- quiz 1 -->
+          <?php
+          $editor = 'Editors\' Choice';
+          $cat = 'Comic Books';
+          $catImg = 'img/comicbook.jpg';
+          $sql = "SELECT * FROM `quiz` WHERE `category` = '$cat' LIMIT 1";
+          $result = mysqli_query($conn, $sql) or die(mysql_error());
+          if(mysqli_num_rows($result) > 0) {
+            $counter = 0;
+            while ($row = mysqli_fetch_assoc($result)) {
+              //converts datetime to readable date and time format
+              $date = date_create($row['dayCreated']);
+              echo '<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">';
+              echo '<div class="col p-4 d-flex flex-column position-static">';
+              echo '<strong class="d-inline-block mb-2 text-primary">'.$editor.'</strong>';
+              echo '<h3 class="mb-0">'.$row["quizName"].'</h3>';
+              echo '<div class="mb-1 text-muted">'.date_format($date, DATE_COOKIE).'</div>';
+              echo '<p class="card-text mb-auto">'.$row["quizDesc"].'</p>';
+              //links to the next page with variable passed to the url
+              echo '<a href="quiz.php?quizID='.$row["quizID"].'" class="stretched-link">Take quiz</a>';
+              echo '</div>';
+              echo '<div class="col-auto float-right">';
+              echo '<img src="'.$catImg.'" width="250" height="250">';
+              echo '</div>';
+              echo '</div>';
+              $counter++;
+            }
+          }else{
+            echo '<div class="alert alert-danger">
+                  <h3 class="no-quizzes">There are no quizzes for Comic Books Yet :( Please be my first... please.</h3>
+                  </div>';
+          }
+          ?>
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/characterImg/batman.jpg" alt="Second slide" >
+          <img class="d-block w-100" src="img/characterImg/rickGrimes.jpeg" alt="Second slide" >
           <!--QuizCard-->
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Comic</strong>
-              <h3 class="mb-0">What's In Your Utility Belt?</h3>
-              <div class="mb-1 text-muted">Oct 12</div>
-              <p class="card-text mb-auto">Description of Quiz here</p>
-              <a href="#" class="stretched-link">Take quiz</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <img src="img/comicbook.jpg" width="250" height="250">
-            </div>
-          </div>
-          <!--End of QuizCard-->
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/characterImg/joker.jpg" alt="Third slide" >
-          <!--QuizCard-->
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Comic</strong>
-              <h3 class="mb-0">Which Joker Are You?</h3>
-              <div class="mb-1 text-muted">Oct 12</div>
-              <p class="card-text mb-auto">Description of Quiz here</p>
-              <a href="#" class="stretched-link">Take quiz</a>
-            </div>
-            <div class="col-auto d-none d-lg-block">
-              <img src="img/comicbook.jpg" width="250" height="250">
-            </div>
+          <!-- quiz 2 -->
+          <?php
+          $cat = 'TV';
+          $catImg = 'img/tv.jpg';
+          $sql = "SELECT * FROM `quiz` WHERE `category` = '$cat' LIMIT 1";
+          $result = mysqli_query($conn, $sql) or die(mysql_error());
+          if(mysqli_num_rows($result) > 0) {
+            $counter = 0;
+            while ($row = mysqli_fetch_assoc($result)) {
+              //converts datetime to readable date and time format
+              $date = date_create($row['dayCreated']);
+              echo '<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background:white;">';
+              echo '<div class="col p-4 d-flex flex-column position-static">';
+              echo '<strong class="d-inline-block mb-2 text-primary">'.$row["category"].'</strong>';
+              echo '<h3 class="mb-0">'.$row["quizName"].'</h3>';
+              echo '<div class="mb-1 text-muted">'.date_format($date, DATE_COOKIE).'</div>';
+              echo '<p class="card-text mb-auto">'.$row["quizDesc"].'</p>';
+              //links to the next page with variable passed to the url
+              echo '<a href="quiz.php?quizID='.$row["quizID"].'" class="stretched-link">Take quiz</a>';
+              echo '</div>';
+              echo '<div class="col-auto float-right">';
+              echo '<img src="'.$catImg.'" width="250" height="250">';
+              echo '</div>';
+              echo '</div>';
+              $counter++;
+            }
+          }else{
+            echo '<div class="alert alert-danger">
+                  <h3 class="no-quizzes">There are no quizzes for Comic Books Yet :( Please be my first... please.</h3>
+                  </div>';
+          }
+          ?>
           </div>
           <!--End of QuizCard-->
         </div>
@@ -97,7 +125,6 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
 
   <!-- insert footer here -->
   <?php

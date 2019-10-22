@@ -21,7 +21,7 @@
     include("header_main.php")
   ?>
 
-  <div class="categoryTitle" id="categoryTitle"> <a href="categoryList.php"> Category </a>: Movie</div>
+  <div class="headingTitle"> <a href="categoryList.php"> Category </a>: Movie</div>
 
   <section>
     <div class="left">

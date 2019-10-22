@@ -17,10 +17,10 @@
 
 <body>
   <?php
-    include("header_main.php")
+    include("header_main.php");
   ?>
 
-  <div class="categoryTitle" id="categoryTitle"> <a href="categoryList.php"> Category </a>: Cartoon</div>
+  <div class="headingTitle"> <a href="categoryList.php"> Category </a>: Cartoon</div>
 
   <section>
     <div class="left">
