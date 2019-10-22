@@ -232,7 +232,7 @@
   if (!mysqli_query($conn, $sql)) {
     die('Error: ' . mysql_error());
   }
-  $sql = "INSERT INTO `answer` (`ansID`, `ansDesc`, `questionID`, `cID`) VALUES (NULL, '$ans4char3', '$qID5', '$char3')";
+  $sql = "INSERT INTO `answer` (`ansID`, `ansDesc`, `questionID`, `cID`) VALUES (NULL, '$ans5char3', '$qID5', '$char3')";
   if (!mysqli_query($conn, $sql)) {
     die('Error: ' . mysql_error());
   }
