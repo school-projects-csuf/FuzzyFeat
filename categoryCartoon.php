@@ -20,7 +20,7 @@
     include("header_main.php")
   ?>
 
-  <div class="categoryTitle" id="categoryTitle">Cartoon</div>
+  <div class="categoryTitle"> <a href="categoryList.php"> Category:</a> Cartoon</div>
 
   <section>
     <div class="left">

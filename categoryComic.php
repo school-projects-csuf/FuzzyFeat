@@ -21,7 +21,7 @@
   include("header_main.php")
   ?>
 
-  <h1 class="categoryTitle" id="categoryTitle">Comic Books</h1>
+  <div class="categoryTitle"> <a href="categoryList.php"> Category:</a> Comic Books</div>
   <section>
     <div class="left">
       <img src="img/plus.png" width="85%" height="240">
