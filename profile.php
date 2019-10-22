@@ -19,7 +19,22 @@
   <title>Profile</title>
 </head>
 
+<<<<<<< HEAD
 <body style="background-image:url('backgroundindex.jpg');">
+=======
+<style>
+	body{
+		background-image: url("img/backgroundIndex.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.user-quizzes-container, .row{
+	  background-color: rgba(255,255,255,.8);
+	}
+</style>
+
+<body class = "profileBody">
+>>>>>>> f50be1377b0a2581d8e2217190fdaa8f8f76624c
   <!-- main header -->
   <?php
     include("header_main.php")
@@ -29,15 +44,18 @@
 	?>
   <!-- Begin body -->
   <div class="container" style="padding-top:100px;">
-    <div class="user-info-container  border rounded">
-      <img src="img/user.jpg" class="profile-img" alt="avatar">
-      <p class="username"><span class="at">@</span  id="username">Xx360NoScopexX<p>
-      <p>On the weekends I like to play Call of Duty with a cup of ice cold chocolate milk served by mommy.</p>
+    <div class="user-info-container   border rounded">
+      <img src="img/user.jpg" class="profile-img " alt="avatar" style="margin-left:42%;">
+      <p class="username row d-flex justify-content-center rounded" style="padding-bottom:20px;"><span class="at">@</span  id="username"><b>Xx360NoScopexX</b><p>
+      <p class="row d-flex justify-content-center rounded">On the weekends I like to play Call of Duty with a cup of ice cold chocolate milk served by mommy.</p>
     </div>
-    <div class="user-quizzes-container">
-      <h1>Quizzes</h1>
-        <hr>
-      <!-- Quiz list. -->
+		<div class="row d-flex justify-content-center rounded">
+			<div class="user-quizzes-container" style="background-color: rgba(255,255,255,0);">
+	      <h1>Quizzes</h1>
+	        <hr>
+		</div>
+
+      <!-- Remove div below. just here for testing. -->
       <div class="quizzes-container">
 				<?php
 				$sql = "SELECT * FROM `quiz` WHERE `uid` = '$uid'";
