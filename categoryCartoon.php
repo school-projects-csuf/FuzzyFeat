@@ -17,7 +17,7 @@
 
 <body>
   <?php
-    include("header.html")
+    include("header_main.php")
   ?>
 
   <div class="categoryTitle" id="categoryTitle">Cartoon</div>
@@ -32,7 +32,6 @@
     <div class="mid">
 
       <!-- Quiz list. -->
-      <div class="quizzes-container mid">
         <!-- quiz 1 -->
 				<?php
         $catImg = 'img/cartoons.jpg';
@@ -59,8 +58,8 @@
 						$counter++;
 					}
 				}else{
-					echo '<div class="container md-auto">
-    						<h3>There are no quizzes for Cartoon Yet :( Please be my first... please.</h3>
+					echo '<div class="alert alert-danger">
+    						<h3 class="no-quizzes">There are no quizzes for Cartoon Yet :( Please be my first... please.</h3>
     						</div>';
 				}
 				?>
