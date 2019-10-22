@@ -91,6 +91,12 @@
     </div>
 
   </section>
+	
+	<!-- insert footer here -->
+	<?php
+		include("footer.html")
+	?>
+	
 </body>
 
 </html>

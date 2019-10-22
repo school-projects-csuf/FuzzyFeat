@@ -75,7 +75,7 @@
               <img src="<?php echo $cImg; ?>" alt="" style="width:800px; height:500px;"> <!--placeholder-->
               <p class="lead" style="font-size:27pt;"><?php echo $cDesc; ?></p>
             </div>
-            <form class="" action="categoryList.html" method="post">
+            <form class="" action="categoryList.php" method="post">
               <button type="submit" class="btn btn-success">Take Another Quiz</button>
             </form>
 
