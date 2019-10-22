@@ -18,7 +18,7 @@
 <body>
   <!-- header file -->
   <?php
-    include("header.html")
+    include("header_main.php")
   ?>
 
   <div class="categoryTitle" id="categoryTitle">Categories</div>
@@ -75,8 +75,8 @@
 						$counter++;
 					}
 				}else{
-					echo '<div class="container md-auto">
-    						<h3>You haven\'t made any quizzes yet. What are you waiting for?</h3>
+					echo '<div class="alert alert-danger">
+    						<h3 class="no-quizzes">There have been no quizzes created :(</h3>
     						</div>';
 				}
 				?>
