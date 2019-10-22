@@ -20,13 +20,13 @@
     include("header_main.php")
   ?>
 
-  <div class="categoryTitle" id="categoryTitle">Cartoon</div>
+  <div class="categoryTitle" id="categoryTitle"> <a href="categoryList.php"> Category </a>: Cartoon</div>
 
   <section>
     <div class="left">
-      <img src="img/plus.png" width="85%" height="240">
+      <img src="img/smallAd4.png" width="85%" height="240">
       <br><br>
-      <img src="img/plus.png" width="85%" height="240">
+      <img src="img/smallAd5.png" width="85%" height="240">
     </div>
 
     <div class="mid">
@@ -69,8 +69,9 @@
     </div>
 
     <div class="right">
-      <img id="sideAd3" src="img/plus.png" href="#" width="85%" height="500">
+      <img id="sideAd3" src="img/longAd2.png" href="#" width="85%" height="475">
     </div>
+
 
   </section>
 </body>

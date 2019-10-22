@@ -80,6 +80,12 @@
     						</div>';
 				}
 				?>
+
+		</div>
+		</div>
+
+    <div class="right">
+      <img id="sideAd3" src="img/longAd1.png" href="#" width="85%" height="475">
     </div>
 
   </section>
