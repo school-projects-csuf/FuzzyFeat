@@ -30,7 +30,7 @@
       <img src="img/smallAd4.png" width="85%" height="230" style="border-style:outset; border-width: 3px;">
     </div>
 
-    
+
     <!-- Quiz list. -->
     <div class="mid">
       <!-- quiz 1 -->
@@ -65,15 +65,15 @@
               </div>';
       }
       ?>
-	  
+
 	  </div>
 
     <div class="right">
       <img id="sideAd3" src="img/longAd2.png" href="#" width="85%" height="475" style="border-style:outset; border-width: 3px;">
     </div>
-	
+
   </section>
-    
+
 </body>
 
 
